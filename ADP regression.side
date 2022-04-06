@@ -1,0 +1,3104 @@
+{
+  "id": "54c3a3c1-ce1d-42ef-b486-4049afc5686f",
+  "version": "2.0",
+  "name": "ADP Reports' history",
+  "url": "http://dev.gpadp.phoenixit.ru",
+  "tests": [{
+    "id": "1ef59412-bebc-43c0-aa95-99ddcf89466e",
+    "name": "Проверка количества строк в таблице на ЭФ \"История отчетов\"",
+    "commands": [{
+      "id": "ebd3b1da-9dbd-4b86-9c51-32afea508df9",
+      "comment": "Перейти на http://dev.gpadp.phoenixit.ru",
+      "command": "open",
+      "target": "http://dev.gpadp.phoenixit.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55df9180-4373-4bf1-9a00-230480a41dbc",
+      "comment": "Перейти в раздел \"Администрирование\"",
+      "command": "click",
+      "target": "linkText=Администрирование",
+      "targets": [
+        ["linkText=Администрирование", "linkText"],
+        ["css=li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Администрирование')]", "xpath:link"],
+        ["xpath=//div[@id='root']/header/div/div/div[2]/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/constructor/list')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Администрирование')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e64c20f0-fa89-4f6a-9196-6449240919ae",
+      "comment": "Перейти на вкладку \"История отчетов\"",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(3) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(3) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/button[3]/span", "xpath:idRelative"],
+        ["xpath=//button[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'История отчетов')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0d38ed8-28b8-47a6-bc14-0c42a23740dc",
+      "comment": "Открыта ЭФ \"История отчетов\"",
+      "command": "verifyText",
+      "target": "css=.jss682",
+      "targets": [
+        ["css=.jss682", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'История отчетов')]", "xpath:innerText"]
+      ],
+      "value": "История отчетов"
+    }, {
+      "id": "8d50ebf7-d568-40e3-8882-1ca4095e140a",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3a1ae75-dbfc-4c39-924f-81224d2f449a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiListItem-root:nth-child(1)",
+      "targets": [
+        ["css=.MuiListItem-root:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='menu-']/div[3]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[3]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'10')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4ab8517-a235-456c-8097-e52cc0f64138",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiTableRow-root:nth-child(10) > .MuiTableCell-root:nth-child(1)",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(10) > .MuiTableCell-root:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/tbody/tr[10]/td", "xpath:idRelative"],
+        ["xpath=//tr[10]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'10')]", "xpath:innerText"]
+      ],
+      "value": "10"
+    }, {
+      "id": "d56716da-c659-4537-ac08-2e7619c98b95",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jss352 > .MuiButton-label",
+      "targets": [
+        ["css=.jss352 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div[2]/div[2]/button[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31856664-3e7d-4edb-a366-381a8a8108cc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiTableRow-root:nth-child(10) > .MuiTableCell-root:nth-child(1)",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(10) > .MuiTableCell-root:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/tbody/tr[10]/td", "xpath:idRelative"],
+        ["xpath=//tr[10]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'10')]", "xpath:innerText"]
+      ],
+      "value": "10"
+    }, {
+      "id": "32e505a5-fa63-4ad1-af28-9ecd015e2f33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(4) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(4) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div[2]/div[2]/button[3]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button[3]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08b5cbd2-688d-4039-81ab-7118d7dc550a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiTableRow-root:nth-child(10) > .MuiTableCell-root:nth-child(1)",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(10) > .MuiTableCell-root:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/tbody/tr[10]/td", "xpath:idRelative"],
+        ["xpath=//tr[10]/td", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "5ec3671e-624f-4167-8291-dc4be92d6bb4",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88b5ee03-f534-4248-9ad5-1d8f2f2a4b8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiListItem-root:nth-child(2)",
+      "targets": [
+        ["css=.MuiListItem-root:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='menu-']/div[3]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'20')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3df1f232-c4e9-437e-8563-5972ce289ff7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiInput-input",
+      "targets": [
+        ["css=.MuiInput-input", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "265ed3a2-dd7c-4b44-96c4-43077da2e4a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jss352 > .MuiButton-label",
+      "targets": [
+        ["css=.jss352 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div[2]/div[2]/button[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83cf0ff7-d366-4368-8d5a-171b79e03529",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiTableRow-root:nth-child(20) > .MuiTableCell-root:nth-child(1)",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(20) > .MuiTableCell-root:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/tbody/tr[20]/td", "xpath:idRelative"],
+        ["xpath=//tr[20]/td", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "e11b2e3e-afee-41c0-98cb-88a4b76e35e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(4) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(4) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div[2]/div[2]/button[3]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button[3]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db43621b-8ee2-409b-8f20-1d85ca0f06a9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d34f3aed-7135-431b-9bc4-31b2d5535bef",
+    "name": "Проверка Конструктор отчётов-История отчётов",
+    "commands": [{
+      "id": "2e9971a1-1bd8-47ca-9c9d-4de793af1e6f",
+      "comment": "Перейти на http://dev.gpadp.phoenixit.ru",
+      "command": "open",
+      "target": "http://dev.gpadp.phoenixit.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab0d58fb-9ddf-4bd1-8cac-5ac6c3b555f4",
+      "comment": "Нажать на раздел \"Администрирование\"",
+      "command": "click",
+      "target": "linkText=Администрирование",
+      "targets": [
+        ["linkText=Администрирование", "linkText"],
+        ["css=li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Администрирование')]", "xpath:link"],
+        ["xpath=//div[@id='root']/header/div/div/div[2]/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/constructor/list')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Администрирование')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a89027b-9b74-46d5-a191-54678a33da09",
+      "comment": "Перейти на вкладку \"Конструктор отчётов\"",
+      "command": "click",
+      "target": "linkText=Конструктор отчетов",
+      "targets": [
+        ["linkText=Конструктор отчетов", "linkText"],
+        ["css=.item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Конструктор отчетов')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/nav/a[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/admin/constructor/list')])[2]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Конструктор отчетов')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbdace36-baf0-45f5-b088-ff462dd274c2",
+      "comment": "Нажать на кнопку \"История отчётов\"",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(3) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(3) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/button[3]/span", "xpath:idRelative"],
+        ["xpath=//button[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'История отчетов')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8ded169-5989-40df-b4c4-f1eb732dabde",
+      "comment": "Проверить соответствие названия кнопки \"История отчетов\"",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='root']/div/div/h3",
+      "targets": [
+        ["css=.jss891", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'История отчетов')]", "xpath:innerText"]
+      ],
+      "value": "История отчетов"
+    }, {
+      "id": "28252ecb-86ee-430e-8060-059838d3afd7",
+      "comment": "Нажать на кнопку \"Хранилище отчётов\"",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(2) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(2) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Хранилище отчетов')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf4aff84-8d13-4eb0-af4b-e8016b263ea9",
+      "comment": "Проверить соответствие названия кнопки \"Хранилище отчетов\"",
+      "command": "verifyText",
+      "target": "css=.jss733",
+      "targets": [
+        ["css=.jss733", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Хранилище отчетов')]", "xpath:innerText"]
+      ],
+      "value": "Хранилище отчетов"
+    }, {
+      "id": "920bce7f-cf67-4a08-86f0-4af8f90ec80d",
+      "comment": "Нажать на кнопку \"Список отчетов\"",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(1) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(1) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Список отчетов')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d42d3b57-3da2-4ef6-9071-892313637304",
+      "comment": "Проверить соответствие названия кнопки \"Список отчетов\"",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='root']/div/div/h3",
+      "targets": [
+        ["css=.jss792", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Список отчетов')]", "xpath:innerText"]
+      ],
+      "value": "Список отчетов"
+    }, {
+      "id": "8b45dc49-189f-44e4-9627-a3289a81fcdd",
+      "comment": "Нажать на кнопку \"История отчетов\"",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(3) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(3) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/button[3]/span", "xpath:idRelative"],
+        ["xpath=//button[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'История отчетов')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06e70b8b-7709-439e-92ec-768bcc23d40f",
+      "comment": "№",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(1) .jss271",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(1) .jss271", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th/div/div/div", "xpath:idRelative"],
+        ["xpath=//th/div/div/div", "xpath:position"]
+      ],
+      "value": "№"
+    }, {
+      "id": "c1a8e577-aac8-4b1f-bc27-7e6ce7bf9dcb",
+      "comment": "Действие",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(2) .jss271",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(2) .jss271", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//th[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "Действие"
+    }, {
+      "id": "43a73c59-464a-48cb-87a4-08cf9e6f8f89",
+      "comment": "Пользовательское название",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(3) .jss281",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(3) .jss281", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[3]/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//th[3]/div/div/div/span/span", "xpath:position"]
+      ],
+      "value": "Пользовательское название"
+    }, {
+      "id": "6ff2f525-f9a0-43ef-9a22-8f1e17b32071",
+      "comment": "Наименование",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(4) .jss281",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(4) .jss281", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[4]/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//th[4]/div/div/div/span/span", "xpath:position"]
+      ],
+      "value": "Наименование"
+    }, {
+      "id": "be609f84-71c7-4a80-8b8b-6aec44a6fdc5",
+      "comment": "Создатель",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(5) .jss281",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(5) .jss281", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[5]/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//th[5]/div/div/div/span/span", "xpath:position"]
+      ],
+      "value": "Создатель"
+    }, {
+      "id": "4d4eebff-209d-4138-929d-353aa8f2f059",
+      "comment": "Дата начала отчета",
+      "command": "verifyText",
+      "target": "css=.MuiTableSortLabel-active > .jss281",
+      "targets": [
+        ["css=.MuiTableSortLabel-active > .jss281", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[6]/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//th[6]/div/div/div/span/span", "xpath:position"]
+      ],
+      "value": "Дата начала отчета"
+    }, {
+      "id": "bacc66b3-8737-4f11-b426-ed54f49296ba",
+      "comment": "Дата окончания отчета",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(7) .jss281",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(7) .jss281", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[7]/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//th[7]/div/div/div/span/span", "xpath:position"]
+      ],
+      "value": "Дата окончания отчета"
+    }, {
+      "id": "ed20f3b2-af42-4fee-8a1f-055d01406d45",
+      "comment": "Вид отчета",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(8) .jss281",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(8) .jss281", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[8]/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//th[8]/div/div/div/span/span", "xpath:position"]
+      ],
+      "value": "Вид отчета"
+    }, {
+      "id": "104396b3-bbee-448c-84a9-5d7fe73bc2dc",
+      "comment": "Статус отчета",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(9) .jss281",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(9) .jss281", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[9]/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//th[9]/div/div/div/span/span", "xpath:position"]
+      ],
+      "value": "Статус отчета"
+    }, {
+      "id": "72fe26e4-4ce6-471c-804d-42db7aa5c3e9",
+      "comment": "Скачать",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(10) .jss271",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(10) .jss271", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[10]/div/div/div", "xpath:idRelative"],
+        ["xpath=//th[10]/div/div/div", "xpath:position"]
+      ],
+      "value": "Скачать"
+    }, {
+      "id": "83c87a4e-e72b-47ec-ab04-f8809cfbbfff",
+      "comment": "Тестирование вкладки \"История отчетов\" завершено",
+      "command": "click",
+      "target": "linkText=Выйти",
+      "targets": [
+        ["linkText=Выйти", "linkText"],
+        ["css=div:nth-child(2) > div > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Выйти')]", "xpath:link"],
+        ["xpath=//div[@id='root']/header/div/div/div[3]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Выйти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3ae2ef8f-ffc7-4c9d-83e1-bed3ce543cce",
+    "name": "Проверка пагинации на вкладке \"История отчетов\"",
+    "commands": [{
+      "id": "a05a33db-45ab-4e71-998f-baa0d2108993",
+      "comment": "Перейти на http://dev.gpadp.phoenixit.ru",
+      "command": "open",
+      "target": "http://dev.gpadp.phoenixit.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e07ff4fe-1b31-4307-acf0-a64501acc0b8",
+      "comment": "Нажать на \"Администрирование\"",
+      "command": "click",
+      "target": "linkText=Администрирование",
+      "targets": [
+        ["linkText=Администрирование", "linkText"],
+        ["css=li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Администрирование')]", "xpath:link"],
+        ["xpath=//div[@id='root']/header/div/div/div[2]/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/constructor/list')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Администрирование')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "872c1a7b-9017-423c-9593-f7c1415416c8",
+      "comment": "Открыта ЭФ \"Список отчётов\"",
+      "command": "verifyText",
+      "target": "css=.jss579",
+      "targets": [
+        ["css=.jss579", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Список отчетов')]", "xpath:innerText"]
+      ],
+      "value": "Список отчетов"
+    }, {
+      "id": "d8d3a053-2eee-448d-94d4-070c90da4e94",
+      "comment": "Перейти на вкладку \"История отчётов\"",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(3) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(3) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/button[3]/span", "xpath:idRelative"],
+        ["xpath=//button[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'История отчетов')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8282e577-c396-48bc-b76b-fe541ff8db54",
+      "comment": "Открыта ЭФ \"История отчётов\"",
+      "command": "verifyText",
+      "target": "css=.jss687",
+      "targets": [
+        ["css=.jss687", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'История отчетов')]", "xpath:innerText"]
+      ],
+      "value": "История отчетов"
+    }, {
+      "id": "ceff0f85-ddec-435b-9153-b66a3341baea",
+      "comment": "Кол-во строк для отображения",
+      "command": "verifyText",
+      "target": "css=.MuiInput-input",
+      "targets": [
+        ["css=.MuiInput-input", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "0396b8f6-603e-4618-8f70-59c99dd30d85",
+      "comment": "Перейти на страницу №1",
+      "command": "click",
+      "target": "css=.jss350",
+      "targets": [
+        ["css=.jss350", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div[2]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1-10 из 23')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e5d942d-058a-4743-994b-3f6c3bd632eb",
+      "comment": "Номер последней строки на странице",
+      "command": "verifyText",
+      "target": "css=.MuiTableRow-root:nth-child(10) > .MuiTableCell-root:nth-child(1)",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(10) > .MuiTableCell-root:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/tbody/tr[10]/td", "xpath:idRelative"],
+        ["xpath=//tr[10]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'10')]", "xpath:innerText"]
+      ],
+      "value": "10"
+    }, {
+      "id": "24d2962b-342b-4657-a533-fe5aa3cb686d",
+      "comment": "Страница №1",
+      "command": "verifyText",
+      "target": "css=.jss352 > .MuiButton-label",
+      "targets": [
+        ["css=.jss352 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[3]/div[2]/button[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]/span", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "2037356e-0d85-4a3e-b575-9db0a0265a71",
+      "comment": "Перейти на страницу №1",
+      "command": "click",
+      "target": "css=.jss350",
+      "targets": [
+        ["css=.jss350", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[3]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1-10 из 123')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c203a8a7-50eb-4e7d-a1a5-cd2937212897",
+      "comment": "Отражены отчёты 1-10",
+      "command": "verifyText",
+      "target": "css=.jss350",
+      "targets": [],
+      "value": "1-10 из 23"
+    }, {
+      "id": "b4e64690-cb80-45b3-acad-78e65589b3eb",
+      "comment": "Страница №2",
+      "command": "verifyText",
+      "target": "css=.MuiButtonBase-root:nth-child(4) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(4) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[3]/div[2]/button[3]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button[3]/span", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "9d6bdaf0-7a79-45bd-bddd-91ba57b043c6",
+      "comment": "Перейти на страницу №2",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(4) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(4) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[3]/div[2]/button[3]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button[3]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "278b6f0f-b092-4fba-ac45-e42b140530e8",
+      "comment": "Отражены отчёты 11-20",
+      "command": "verifyText",
+      "target": "css=.jss350",
+      "targets": [
+        ["css=.jss350", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[3]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'11-20 из 123')]", "xpath:innerText"]
+      ],
+      "value": "11-20 из 23"
+    }, {
+      "id": "647eae9b-e082-4624-b6ff-2375b6066a9c",
+      "comment": "Тестирование завершено",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6045db3-738d-40b0-9950-71ac34886e9a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.jss687",
+      "targets": [
+        ["css=.jss687", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'История отчетов')]", "xpath:innerText"]
+      ],
+      "value": "История отчетов"
+    }]
+  }, {
+    "id": "a4de63e1-8ed2-4980-b2f1-3b5c18ad0ef8",
+    "name": "Переходы-Наименования. Участники (Сценарий 1 Создание задачи)",
+    "commands": [{
+      "id": "f81aeaee-3836-4280-ae7c-34da5260a711",
+      "comment": "",
+      "command": "open",
+      "target": "http://dev.gpadp.phoenixit.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aebe13f0-1b3a-4c33-9931-0e058686814c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Задачи')]", "xpath:innerText"]
+      ],
+      "value": "Задачи"
+    }, {
+      "id": "2aa2604f-69fd-4f79-8a00-9b517f16dfe7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-label > span",
+      "targets": [
+        ["css=.MuiButton-label > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e4914dd-084f-4864-9179-d274ca04d1cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=taskName",
+      "targets": [
+        ["id=taskName", "id"],
+        ["css=#taskName", "css:finder"],
+        ["xpath=//input[@id='taskName']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/form/div/div[2]/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4116bb72-bf03-4dcc-b3f4-d3d534b6fe32",
+      "comment": "",
+      "command": "type",
+      "target": "id=taskName",
+      "targets": [
+        ["id=taskName", "id"],
+        ["css=#taskName", "css:finder"],
+        ["xpath=//input[@id='taskName']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/form/div/div[2]/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Задача тестирование"
+    }, {
+      "id": "1891cbdf-a712-4632-9a58-463bec9925a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-form-item-control-input-content .MuiButton-label",
+      "targets": [
+        ["css=.ant-form-item-control-input-content .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/form/div[3]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Сохранить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "050ba85b-2dd2-4e40-9e11-69ea0840945e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(2) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(2) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/div/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Участники')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "750e5261-3041-4894-b187-bb2f4ad39caf",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.jss831 h3",
+      "targets": [
+        ["css=.jss831 h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Участники административного производства')]", "xpath:innerText"]
+      ],
+      "value": "Участники административного производства"
+    }, {
+      "id": "a4d007af-0ee3-4f61-a275-6bd7d87df38d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jss844 > .MuiButton-label",
+      "targets": [
+        ["css=.jss844 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Добавить участника')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd710a5f-3ff8-43bb-bfe0-cb4a7b47c272",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d0e002b-5807-4f32-9f3f-e2ca5c7bb7f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiListItem-root:nth-child(4)",
+      "targets": [
+        ["css=.MuiListItem-root:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='menu-memberKind']/div[3]/ul/li[4]", "xpath:idRelative"],
+        ["xpath=//div[3]/ul/li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Физическое лицо')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6200226e-dd91-4f24-825c-76a8ceddd3d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jss979 > .MuiButton-label",
+      "targets": [
+        ["css=.jss979 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Поиск по реестру участников')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83273cf3-84d8-4a5f-8bd1-be10e0332ee0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Mui-focused > .MuiInputBase-input",
+      "targets": [
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=(//input[@name='lastName'])[2]", "xpath:attributes"],
+        ["xpath=//form/div[2]/div/div/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39d27353-ca69-4b59-b628-63b618ed85f6",
+      "comment": "",
+      "command": "type",
+      "target": "css=.Mui-focused > .MuiInputBase-input",
+      "targets": [
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=(//input[@name='lastName'])[2]", "xpath:attributes"],
+        ["xpath=//form/div[2]/div/div/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Виноградов"
+    }, {
+      "id": "d242d205-f102-4722-850c-54a6b65bad82",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Mui-focused > .MuiInputBase-input",
+      "targets": [
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=(//input[@name='firstName'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6131861b-3057-4860-87a1-8b84a74e0a6c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.Mui-focused > .MuiInputBase-input",
+      "targets": [
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=(//input[@name='firstName'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Александр"
+    }, {
+      "id": "3053fd3f-7dc3-4a8f-a702-1cd5877eeebd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jss1112 > .ant-picker-input > input",
+      "targets": [
+        ["css=.jss1112 > .ant-picker-input > input", "css:finder"],
+        ["xpath=(//input[@name='birthDay'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a285adbb-c7f4-43a0-a117-79853941f9cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .ant-picker-cell:nth-child(2) > .ant-picker-cell-inner",
+      "targets": [
+        ["css=tr:nth-child(4) > .ant-picker-cell:nth-child(2) > .ant-picker-cell-inner", "css:finder"],
+        ["xpath=//tr[4]/td[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f008e6e3-7432-498e-82b2-5461e09bd926",
+      "comment": "",
+      "command": "type",
+      "target": "css=.jss1112 > .ant-picker-input > input",
+      "targets": [
+        ["css=.jss1112 > .ant-picker-input > input", "css:finder"],
+        ["xpath=(//input[@name='birthDay'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "18.09.1956"
+    }, {
+      "id": "9035f8a5-bcb1-4756-9e81-bcb8c64ab730",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Mui-focused > .MuiInputBase-input",
+      "targets": [
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=(//input[@name='placeBirth'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div[3]/div[2]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a7a402c-9c41-4297-952f-d9818fd286c9",
+      "comment": "",
+      "command": "type",
+      "target": "css=.Mui-focused > .MuiInputBase-input",
+      "targets": [
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=(//input[@name='placeBirth'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div[3]/div[2]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Москва"
+    }, {
+      "id": "752b37dc-3530-4647-9646-2fcfecb8a539",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21ef6974-60f7-4eae-b317-43ca0261c4f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(10)",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(10)", "css:finder"],
+        ["xpath=//div[@id='menu-citizenship']/div[3]/ul/li[10]", "xpath:idRelative"],
+        ["xpath=//li[10]", "xpath:position"],
+        ["xpath=//li[contains(.,'АРУБА')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "edb49230-7a3d-4525-9dc3-1129ab9782fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jss1106:nth-child(1) > .MuiButton-label",
+      "targets": [
+        ["css=.jss1106:nth-child(1) > .MuiButton-label", "css:finder"],
+        ["xpath=//form/div[3]/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Создать новое физическое лицо')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eac3c5a0-ba6b-4d6e-841b-48c5275e45cd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": "Сохранено успешно"
+    }, {
+      "id": "fad989ea-7277-4181-9721-76af07620d3a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jss763 path",
+      "targets": [
+        ["css=.jss763 path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5aca638-d01f-400a-8297-84cfaf7bf09c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.jss831 h3",
+      "targets": [
+        ["css=.jss831 h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Участники административного производства')]", "xpath:innerText"]
+      ],
+      "value": "Участники административного производства"
+    }, {
+      "id": "c0be6837-6933-4a4c-9dde-4a9735d1796c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bd91449e-ddaa-4a9c-9a6c-2a7c2084cea0",
+    "name": "Переходы-Наименования. Участники (Сценарий 2 Редактирование задачи)",
+    "commands": [{
+      "id": "b52cbcb8-1376-4f46-8c98-e60eb04a5915",
+      "comment": "",
+      "command": "open",
+      "target": "http://dev.gpadp.phoenixit.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac2f5ce0-1aa8-42f3-8367-57d883369699",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiToolbar-root > .MuiButtonBase-root",
+      "targets": [
+        ["css=.MuiToolbar-root > .MuiButtonBase-root", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47617e8e-3b49-4be4-8acb-572c4bb64f2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "633bd359-1538-4873-be5d-6ffae3c5215d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3e72a76-0f54-4fb2-8054-329acaca96b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b3e70b7-542c-41ef-8825-31aca5a5038d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiListItem-root:nth-child(2)",
+      "targets": [
+        ["css=.MuiListItem-root:nth-child(2)", "css:finder"],
+        ["xpath=//nav/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22b56f55-879e-4dc5-bfdd-317f85ac3317",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Новая задача')]", "xpath:innerText"]
+      ],
+      "value": "Новая задача"
+    }, {
+      "id": "877f0218-b44b-449f-a71d-59b77df838f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(2) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(2) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/div/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Участники')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43d802d5-0505-40eb-bb06-83908754255d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.jss830 h3",
+      "targets": [
+        ["css=.jss830 h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Участники административного производства')]", "xpath:innerText"]
+      ],
+      "value": "Участники административного производства"
+    }, {
+      "id": "5f2737ef-a61b-456a-a88a-ad90fd6cd273",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "aa6ab78c-04e2-491f-9c1a-c6b3ee6373e0",
+    "name": "Проверка наименований в таблице. Участники",
+    "commands": [{
+      "id": "c5c0d14b-e626-488a-a246-6b2c131e474e",
+      "comment": "",
+      "command": "open",
+      "target": "http://dev.gpadp.phoenixit.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e80b2f99-28bf-4b15-ab70-9d023ea8959a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "31976924-2247-4de6-a693-0103915675ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiListItem-root:nth-child(2)",
+      "targets": [
+        ["css=.MuiListItem-root:nth-child(2)", "css:finder"],
+        ["xpath=//nav/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ff6c22e-64bd-490f-abb1-635f1117a095",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(2) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(2) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/div/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Участники')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba062698-f26a-4440-bbb9-62254e7be186",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.jss847 > div",
+      "targets": [
+        ["css=.jss847 > div", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "Участники административного производства"
+    }, {
+      "id": "52b1c211-5ce4-4225-90d9-3bdb27225e63",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(1) .jss890",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(1) .jss890", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div/div/div/div/table/thead/tr/th/div/div/div", "xpath:idRelative"],
+        ["xpath=//th/div/div/div", "xpath:position"]
+      ],
+      "value": "№ п/п"
+    }, {
+      "id": "ec90464a-2db8-4df7-a5d9-97d85a10ed6a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(2) .jss890",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(2) .jss890", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div/div/div/div/table/thead/tr/th[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//th[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "Действия"
+    }, {
+      "id": "2fbcd0f6-b47d-4bed-b75e-07939be1d798",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiTableSortLabel-active > .jss911",
+      "targets": [
+        ["css=.MuiTableSortLabel-active > .jss911", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div/div/div/div/table/thead/tr/th[3]/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//th[3]/div/div/div/span/span", "xpath:position"]
+      ],
+      "value": "ФИО/Название организации"
+    }, {
+      "id": "d9632d64-d9d3-4f9f-88fd-b74d878c8f0d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(4) .jss911",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(4) .jss911", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div/div/div/div/table/thead/tr/th[4]/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//th[4]/div/div/div/span/span", "xpath:position"]
+      ],
+      "value": "Дата рождения/Дата регистрации"
+    }, {
+      "id": "d4836f57-d6cf-4c9c-ac6f-8f3f2b969753",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(5) .jss911",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(5) .jss911", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div/div/div/div/table/thead/tr/th[5]/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//th[5]/div/div/div/span/span", "xpath:position"]
+      ],
+      "value": "Тип участника"
+    }, {
+      "id": "223fb414-add2-4ed1-b5fb-14b61e31140c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(6) .jss911",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(6) .jss911", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div/div/div/div/table/thead/tr/th[6]/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//th[6]/div/div/div/span/span", "xpath:position"]
+      ],
+      "value": "ИНН"
+    }, {
+      "id": "093bdb4e-2b28-4094-84fd-bf168c42cf07",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(7) .jss890",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(7) .jss890", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div/div/div/div/table/thead/tr/th[7]/div/div/div", "xpath:idRelative"],
+        ["xpath=//th[7]/div/div/div", "xpath:position"]
+      ],
+      "value": "Извещение"
+    }, {
+      "id": "9593d7a3-c8cf-467c-9384-b906483bacb9",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Модуль АДП",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa6d2a3b-3910-45e1-878f-d92ec7c558a2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "55aa6daa-aa6c-42a7-a128-726cf301ee2c",
+    "name": "Проверка состава кнопки \"Действия\". Участники",
+    "commands": [{
+      "id": "c5b4e26b-ce27-4b48-9462-14279b4400b2",
+      "comment": "",
+      "command": "open",
+      "target": "http://dev.gpadp.phoenixit.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f21c8a7a-d5da-4183-a631-6894a3867e23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root > path",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce71fd29-edb8-4b34-a80d-994e84e0e7fb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiListItem-root:nth-child(2)",
+      "targets": [
+        ["css=.MuiListItem-root:nth-child(2)", "css:finder"],
+        ["xpath=//nav/div[2]", "xpath:position"]
+      ],
+      "value": "Редактировать"
+    }, {
+      "id": "7c9b04ec-5165-476a-9220-14dea517785f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiListItem-root:nth-child(2)",
+      "targets": [
+        ["css=.MuiListItem-root:nth-child(2)", "css:finder"],
+        ["xpath=//nav/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f027956-1bd3-47c6-bb44-dc688e8c9dad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(2) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(2) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/div/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Участники')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "013cc5d1-b900-4e7c-a6cf-714415dfe1d1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.jss830 h3",
+      "targets": [
+        ["css=.jss830 h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Участники административного производства')]", "xpath:innerText"]
+      ],
+      "value": "Участники административного производства"
+    }, {
+      "id": "4b421329-4a04-4e27-9cef-174fbf60c2e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) span > span > .jss836",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) span > span > .jss836", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "50783505-f288-4a24-87b8-03067418513e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiTypography-h6",
+      "targets": [
+        ["css=.MuiTypography-h6", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Карточка участника')]", "xpath:innerText"]
+      ],
+      "value": "Карточка участника"
+    }, {
+      "id": "6febd967-8fa8-4099-9beb-09bc7faf10c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jss763 .MuiSvgIcon-root",
+      "targets": [
+        ["css=.jss763 .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d5f4ca8-9cec-4e58-9d98-3c296053baee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) span > span:nth-child(2) path",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) span > span:nth-child(2) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbb00b82-3286-4c3f-9cc3-23a7d3682e33",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiTypography-h6",
+      "targets": [
+        ["css=.MuiTypography-h6", "css:finder"],
+        ["xpath=//div[@id='confirm-dialog-title']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "Вы действительно хотите удалить участника? Участник будет удален из задачи и связанных подзадач."
+    }, {
+      "id": "6262cc4d-ba71-4db8-9143-7842784d6717",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-containedSecondary:nth-child(2) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedSecondary:nth-child(2) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Отмена')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4ea2593-5f49-4fef-846b-8c34f0538b88",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > div > span > .MuiSvgIcon-root > path",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > div > span > .MuiSvgIcon-root > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "23d8ed77-d34b-43bc-b003-a049d7dab352",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiTypography-h6",
+      "targets": [
+        ["css=.MuiTypography-h6", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Карточка участника')]", "xpath:innerText"]
+      ],
+      "value": "Карточка участника"
+    }, {
+      "id": "8706d846-95d1-4b34-acbc-1347a97dfbe9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8ae424b8-f031-4b2d-b486-068befcb9b78",
+    "name": "[Составить тест] Пагинация. Участники",
+    "commands": []
+  }, {
+    "id": "43377dbd-9306-467f-90be-118b036855c3",
+    "name": "Проверка наименований колонок МО \"Выбор ФЛ\"",
+    "commands": [{
+      "id": "fb612a9d-04f1-49c4-bebf-4be3b985480f",
+      "comment": "",
+      "command": "open",
+      "target": "http://dev.gpadp.phoenixit.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c914b1c-1389-44fb-ac42-a0c8cf6affbc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Задачи')]", "xpath:innerText"]
+      ],
+      "value": "Задачи"
+    }, {
+      "id": "324ff7f1-bdc1-4232-896f-d3a06001f50d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(1) .jss271",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(1) .jss271", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[2]/div/table/thead/tr/th/div/div/div", "xpath:idRelative"],
+        ["xpath=//th/div/div/div", "xpath:position"]
+      ],
+      "value": "Действие"
+    }, {
+      "id": "0d44136e-8359-4be2-be8a-d0e09979f559",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-body:nth-child(1)",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-body:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[2]/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23304a60-a1b7-45ec-b2dd-3d3f8c00f13b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root > path",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "48f9eb72-30c6-4937-9681-30ddd70b415d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiListItem-root:nth-child(2)",
+      "targets": [
+        ["css=.MuiListItem-root:nth-child(2)", "css:finder"],
+        ["xpath=//nav/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96dc6c5f-66f2-40b1-9d04-7cd058756eb1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButtonBase-root:nth-child(2) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(2) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/div/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Участники')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd8b5041-5968-4727-b3d2-25cde0aeb837",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(2) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(2) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/div/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Участники')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf7c9038-52cf-4530-ac5f-ce4c409192ea",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.Mui-selected > .MuiTab-wrapper",
+      "targets": [
+        ["css=.Mui-selected > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/div/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Участники')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a9c88a5-be14-4e63-838b-71b9a5876378",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jss844 > .MuiButton-label",
+      "targets": [
+        ["css=.jss844 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Добавить участника')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbb35e8e-7a58-4cba-adbe-975457c94648",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=mui-component-select-memberKind",
+      "targets": [
+        ["id=mui-component-select-memberKind", "id"],
+        ["css=#mui-component-select-memberKind", "css:finder"],
+        ["xpath=//div[@id='mui-component-select-memberKind']", "xpath:attributes"],
+        ["xpath=//form/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5384bcc-4a3a-40f2-b18d-0d1fb7f2aca2",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.MuiListItem-root:nth-child(1)",
+      "targets": [
+        ["css=.MuiListItem-root:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='menu-memberKind']/div[3]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[3]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Юридическое лицо')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b56f1e44-e98a-433f-a4b8-46aa59aee4c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57ba79c6-52a0-4ebf-9b01-84d5d8159620",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiListItem-root:nth-child(2)",
+      "targets": [
+        ["css=.MuiListItem-root:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='menu-memberKind']/div[3]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Физическое лицо')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0433a7fd-b56b-4078-aafc-d891ee6f2d8e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.jss984 > .MuiButton-label",
+      "targets": [
+        ["css=.jss984 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Поиск по реестру участников')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9e59c34-2106-4a6d-b144-85fb8732a256",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jss984 > .MuiButton-label",
+      "targets": [
+        ["css=.jss984 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Поиск по реестру участников')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "17385595-9380-460d-8c8c-7cda830b5524",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.jss984 > .MuiButton-label",
+      "targets": [
+        ["css=.jss984 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Поиск по реестру участников')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fec342f1-d562-4d0d-a07b-885acc3159e7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiTableRow-root:nth-child(1) .jss473",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) .jss473", "css:finder"],
+        ["xpath=(//input[@value=''])[39]", "xpath:attributes"],
+        ["xpath=//td/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20365b4f-2839-437b-8b83-fdb0a8feff1e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.MuiTableRow-root:nth-child(1) .jss473",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) .jss473", "css:finder"],
+        ["xpath=(//input[@value=''])[39]", "xpath:attributes"],
+        ["xpath=//td/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce20510c-1676-45c1-b968-c1e99d1e85fb",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiTableRow-root:nth-child(1) .jss473",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) .jss473", "css:finder"],
+        ["xpath=(//input[@value=''])[39]", "xpath:attributes"],
+        ["xpath=//td/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5805611f-ed15-4345-8fc8-b185d120195a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiTableRow-root:nth-child(2) .jss473",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(2) .jss473", "css:finder"],
+        ["xpath=(//input[@value=''])[40]", "xpath:attributes"],
+        ["xpath=//tr[2]/td/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "083afd6e-c18e-42ef-add7-35cc13aecb9e",
+    "name": "Проверка наименований колонок МО \"Выбор ФЛ\" (2)",
+    "commands": [{
+      "id": "0d095568-e1c0-4a7d-8955-8efb3c6fac1d",
+      "comment": "",
+      "command": "open",
+      "target": "http://dev.gpadp.phoenixit.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0399875-679e-4657-9e76-8c6106f46d3d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(1) .jss271",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(1) .jss271", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[2]/div/table/thead/tr/th/div/div/div", "xpath:idRelative"],
+        ["xpath=//th/div/div/div", "xpath:position"]
+      ],
+      "value": "Действие"
+    }, {
+      "id": "bc1ca2dc-0a9e-424e-8c53-2105b022b185",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c6187f8-488f-4c1b-978c-756f7331c44f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "11ad4be1-8eb9-4ba3-b868-50ccebbd43c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiListItem-root:nth-child(2)",
+      "targets": [
+        ["css=.MuiListItem-root:nth-child(2)", "css:finder"],
+        ["xpath=//nav/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1848cfdf-5171-4e3f-9fab-574a671818d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(2) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(2) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/div/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Участники')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f2c6c27-955b-4cc0-8700-4b4c17353b33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jss844 > .MuiButton-label",
+      "targets": [
+        ["css=.jss844 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Добавить участника')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "abe24958-763b-409b-a9a4-76875fb11da6",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=mui-component-select-memberKind",
+      "targets": [
+        ["id=mui-component-select-memberKind", "id"],
+        ["css=#mui-component-select-memberKind", "css:finder"],
+        ["xpath=//div[@id='mui-component-select-memberKind']", "xpath:attributes"],
+        ["xpath=//form/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa1fca4e-c99a-4ef9-8853-017241e660dd",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.MuiListItem-root:nth-child(1)",
+      "targets": [
+        ["css=.MuiListItem-root:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='menu-memberKind']/div[3]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[3]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Юридическое лицо')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3845071-7db5-4e0b-80ed-9809e6a000ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e51e075-e132-4c83-976e-1c184fdc2929",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiListItem-root:nth-child(2)",
+      "targets": [
+        ["css=.MuiListItem-root:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='menu-memberKind']/div[3]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Физическое лицо')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c23e07fc-e709-4bf6-9c71-4418f747e23a",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Модуль АДП",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9359fe1b-7b1a-47dc-a42c-d6e1b6377637",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=mui-component-select-memberKind",
+      "targets": [
+        ["id=mui-component-select-memberKind", "id"],
+        ["css=#mui-component-select-memberKind", "css:finder"],
+        ["xpath=//div[@id='mui-component-select-memberKind']", "xpath:attributes"],
+        ["xpath=//form/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Физическое лицо"
+    }, {
+      "id": "0d698c3b-51ce-44b0-8e06-d09dd4b91a52",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.jss984 > .MuiButton-label",
+      "targets": [
+        ["css=.jss984 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Поиск по реестру участников')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22174e03-6c12-4d2c-b5bd-56e936839a58",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jss984 > .MuiButton-label",
+      "targets": [
+        ["css=.jss984 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Поиск по реестру участников')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c914f823-37f5-4f1d-8659-1d97e350df6c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.jss984 > .MuiButton-label",
+      "targets": [
+        ["css=.jss984 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Поиск по реестру участников')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9005fa36-55c7-4068-a1c0-07c39784bc53",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ba62af35-3b0a-4b53-9837-bd0675373fb0",
+    "name": "Проверка наименований, Gui элементов в таблице. Запросы",
+    "commands": [{
+      "id": "669d2872-b1c7-4bfc-8686-3bb2e1122935",
+      "comment": "Перейти на http://dev.gpadp.phoenixit.ru",
+      "command": "open",
+      "target": "http://dev.gpadp.phoenixit.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "356a67e1-6d1f-4f14-a919-e69f6bc2d0b9",
+      "comment": "Нажать на иконку \"Действие\" для первой задачи в списке",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1868112b-2edc-4212-8d49-39c08cfcdfec",
+      "comment": "Выбрать действие \"Редактирование\"",
+      "command": "click",
+      "target": "css=.MuiListItem-root:nth-child(2)",
+      "targets": [
+        ["css=.MuiListItem-root:nth-child(2)", "css:finder"],
+        ["xpath=//nav/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e3a9f3c-766f-4a91-bc5e-a403dcaa851a",
+      "comment": "Перейти на вкладку \"Запросы\"",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(5) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(5) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/div/button[5]/span", "xpath:idRelative"],
+        ["xpath=//button[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Запросы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42c84add-edc9-4a38-80f2-5bfaf0072a50",
+      "comment": "Открыта вкладка \"Запросы\"",
+      "command": "verifyText",
+      "target": "css=.jss859 > div",
+      "targets": [
+        ["css=.jss859 > div", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "Запросы"
+    }, {
+      "id": "8d5a0e17-9529-44e6-9fa2-11c064d99fa5",
+      "comment": "Отражен чек-бокс для АИК \"Надзор-WEB\"",
+      "command": "verifyElementPresent",
+      "target": "css=.MuiFormControl-root:nth-child(1) .jss478",
+      "targets": [
+        ["css=.MuiFormControl-root:nth-child(1) .jss478", "css:finder"],
+        ["xpath=//input[@name='informationSource']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/div/div/label/span/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41e7012e-38d3-4ee1-a0b5-7d1e0d927f8b",
+      "comment": "Отражен чек-бокс для АИК \"Подсистемы \"Антикоррупционная экспертиза нормативных правовых актов\"\"",
+      "command": "verifyElementPresent",
+      "target": "css=.MuiFormControl-root:nth-child(2) .jss478",
+      "targets": [
+        ["css=.MuiFormControl-root:nth-child(2) .jss478", "css:finder"],
+        ["xpath=(//input[@name='informationSource'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/div/div[2]/label/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/label/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa67d6ea-0201-4e2c-99ba-260d2826c42b",
+      "comment": "Отражен чек-бокс для СМЭВ",
+      "command": "verifyElementPresent",
+      "target": "css=.MuiFormControl-root:nth-child(3) .jss478",
+      "targets": [
+        ["css=.MuiFormControl-root:nth-child(3) .jss478", "css:finder"],
+        ["xpath=(//input[@name='informationSource'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/div/div[3]/label/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[3]/label/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4ad5598-a402-4753-8dfd-a3b51065d46d",
+      "comment": "Отражен чек-бокс для ФГИС ЕРП",
+      "command": "verifyElementPresent",
+      "target": "css=.MuiFormControl-root:nth-child(4) .jss478",
+      "targets": [
+        ["css=.MuiFormControl-root:nth-child(4) .jss478", "css:finder"],
+        ["xpath=(//input[@name='informationSource'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/div/div[4]/label/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[4]/label/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "405110ba-3d44-4b71-b99e-c47de654bd1f",
+      "comment": "Выбрать чек-бокс для ФГИС ЕРП",
+      "command": "click",
+      "target": "css=.MuiFormControl-root:nth-child(4) .jss473",
+      "targets": [
+        ["css=.MuiFormControl-root:nth-child(4) .jss473", "css:finder"],
+        ["xpath=(//input[@name='informationSource'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div/div/div[4]/label/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[4]/label/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb60d186-92d9-46f8-97f7-8470f744cc38",
+      "comment": "Нажать кнопку \"Отправить запрос\"",
+      "command": "click",
+      "target": "css=.jss863 > .MuiButton-label",
+      "targets": [
+        ["css=.jss863 > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div[2]/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Отправить запрос')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "395157af-3185-4870-b64c-a14317fd766b",
+      "comment": "Запрос ОТПРАВЛЕН УСПЕШНО",
+      "command": "verifyText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": "Отправлено успешно"
+    }, {
+      "id": "6d5158ba-22df-4a5e-9ed3-c092064d2376",
+      "comment": "АИК \"Надзор-WEB\"",
+      "command": "verifyText",
+      "target": "css=.MuiFormControl-root:nth-child(1) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiFormControl-root:nth-child(1) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div/div/div/label/span[2]", "xpath:idRelative"],
+        ["xpath=//label/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'ФГИС ЕРП')]", "xpath:innerText"]
+      ],
+      "value": "АИК \"Надзор-WEB\""
+    }, {
+      "id": "6e82377b-ef89-49c8-802b-b55096c89ad9",
+      "comment": "Подсистемы \"Антикоррупционная экспертиза нормативных правовых актов\"",
+      "command": "verifyText",
+      "target": "css=.MuiFormControl-root:nth-child(2) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiFormControl-root:nth-child(2) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div/div/div[2]/label/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/label/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'СМЭВ')]", "xpath:innerText"]
+      ],
+      "value": "Подсистемы \"Антикоррупционная экспертиза нормативных правовых актов\""
+    }, {
+      "id": "55f34201-b8b7-41ad-a58f-0c5c5b6d8903",
+      "comment": "СМЭВ",
+      "command": "verifyText",
+      "target": "css=.MuiFormControl-root:nth-child(3) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiFormControl-root:nth-child(3) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div/div/div[3]/label/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/label/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Подсистемы \"Антикоррупционная экспертиза нормативных правовых актов\"')]", "xpath:innerText"]
+      ],
+      "value": "СМЭВ"
+    }, {
+      "id": "df65ed38-473f-4048-bda2-211990900782",
+      "comment": "ФГИС ЕРП",
+      "command": "verifyText",
+      "target": "css=.MuiFormControl-root:nth-child(4) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiFormControl-root:nth-child(4) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div/div/div[4]/label/span[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/label/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'АИК \"Надзор-WEB\"')]", "xpath:innerText"]
+      ],
+      "value": "ФГИС ЕРП"
+    }, {
+      "id": "cf720021-9198-40e3-97d3-ad0295058bb0",
+      "comment": "№",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(1)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[3]/div/div/div/table/thead/tr/th", "xpath:idRelative"],
+        ["xpath=//th", "xpath:position"],
+        ["xpath=//th[contains(.,'№')]", "xpath:innerText"]
+      ],
+      "value": "№"
+    }, {
+      "id": "3c022f45-f77c-41fd-b745-fb3b81389b6d",
+      "comment": "Действие",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(2)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[3]/div/div/div/table/thead/tr/th[2]", "xpath:idRelative"],
+        ["xpath=//th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'Действие')]", "xpath:innerText"]
+      ],
+      "value": "Действие"
+    }, {
+      "id": "33c9f448-ab58-4a91-b863-955487889c69",
+      "comment": "Номер запроса",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(3)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[3]/div/div/div/table/thead/tr/th[3]", "xpath:idRelative"],
+        ["xpath=//th[3]", "xpath:position"],
+        ["xpath=//th[contains(.,'Номер запроса')]", "xpath:innerText"]
+      ],
+      "value": "Номер запроса"
+    }, {
+      "id": "7e1860b7-fa22-4543-83e3-87a54ff3c158",
+      "comment": "Идентификатор системы",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(4)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[3]/div/div/div/table/thead/tr/th[4]", "xpath:idRelative"],
+        ["xpath=//th[4]", "xpath:position"],
+        ["xpath=//th[contains(.,'Идентификатор системы')]", "xpath:innerText"]
+      ],
+      "value": "Идентификатор системы"
+    }, {
+      "id": "03ec1c13-63c1-4ed5-8f3c-d7a92be9b07a",
+      "comment": "Название системы",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(5)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[3]/div/div/div/table/thead/tr/th[5]", "xpath:idRelative"],
+        ["xpath=//th[5]", "xpath:position"],
+        ["xpath=//th[contains(.,'Название системы')]", "xpath:innerText"]
+      ],
+      "value": "Название системы"
+    }, {
+      "id": "c476f6e1-0680-4b03-bfa5-aa28cd0ff141",
+      "comment": "Дата и время запроса",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(6)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[3]/div/div/div/table/thead/tr/th[6]", "xpath:idRelative"],
+        ["xpath=//th[6]", "xpath:position"],
+        ["xpath=//th[contains(.,'Дата и время запроса')]", "xpath:innerText"]
+      ],
+      "value": "Дата и время запроса"
+    }, {
+      "id": "a3420340-8387-48b9-b37a-3939629a4493",
+      "comment": "Инициатор запроса",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(7)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(7)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[3]/div/div/div/table/thead/tr/th[7]", "xpath:idRelative"],
+        ["xpath=//th[7]", "xpath:position"],
+        ["xpath=//th[contains(.,'Инициатор запроса')]", "xpath:innerText"]
+      ],
+      "value": "Инициатор запроса"
+    }, {
+      "id": "3317b09c-de87-485d-8b23-dd387cdee136",
+      "comment": "Скачать запрос",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(8)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[3]/div/div/div/table/thead/tr/th[8]", "xpath:idRelative"],
+        ["xpath=//th[8]", "xpath:position"],
+        ["xpath=//th[contains(.,'Скачать запрос')]", "xpath:innerText"]
+      ],
+      "value": "Скачать запрос"
+    }, {
+      "id": "00fe17df-10ea-43cd-b71c-9724132eef79",
+      "comment": "Статус запроса",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(9)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(9)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[3]/div/div/div/table/thead/tr/th[9]", "xpath:idRelative"],
+        ["xpath=//th[9]", "xpath:position"],
+        ["xpath=//th[contains(.,'Статус запроса')]", "xpath:innerText"]
+      ],
+      "value": "Статус запроса"
+    }, {
+      "id": "9678a98b-5daf-4e8c-8dea-464b2117251b",
+      "comment": "Дата и время ответа",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(10)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(10)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[3]/div/div/div/table/thead/tr/th[10]", "xpath:idRelative"],
+        ["xpath=//th[10]", "xpath:position"],
+        ["xpath=//th[contains(.,'Дата и время ответа')]", "xpath:innerText"]
+      ],
+      "value": "Дата и время ответа"
+    }, {
+      "id": "0b3c56e6-76d5-4e68-8e67-4a7c3591e73f",
+      "comment": "Скачать ответ",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(11)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(11)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[3]/div/div/div/table/thead/tr/th[11]", "xpath:idRelative"],
+        ["xpath=//th[11]", "xpath:position"],
+        ["xpath=//th[contains(.,'Скачать ответ')]", "xpath:innerText"]
+      ],
+      "value": "Скачать ответ"
+    }, {
+      "id": "97501a19-a52d-4d3e-8df1-5835e21abc25",
+      "comment": "Тестирование завершено",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e9a071e3-c623-4bec-97e6-8606bc2e90cb",
+    "name": "Проверка наименований в таблице \"Список задач\"",
+    "commands": [{
+      "id": "edc4bb77-361e-4b0b-b8d4-b3f01af337ff",
+      "comment": "Перейти на http://dev.gpadp.phoenixit.ru",
+      "command": "open",
+      "target": "http://dev.gpadp.phoenixit.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d070ad57-2cf7-44c4-badb-ec0fb951b3fe",
+      "comment": "Открыта ЭФ \"Список задач\"",
+      "command": "verifyText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Задачи')]", "xpath:innerText"]
+      ],
+      "value": "Задачи"
+    }, {
+      "id": "0076ed6d-8cf3-481e-8cdd-afedf92c3abd",
+      "comment": "Название колонки \"Действие\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(1)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[2]/div/table/thead/tr/th", "xpath:idRelative"],
+        ["xpath=//th", "xpath:position"],
+        ["xpath=//th[contains(.,'Действие')]", "xpath:innerText"]
+      ],
+      "value": "Действие"
+    }, {
+      "id": "95fe3768-3559-4990-b312-3b5dd9df7e9a",
+      "comment": "Название колонки \"ID\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(2)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[2]/div/table/thead/tr/th[2]", "xpath:idRelative"],
+        ["xpath=//th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'ID')]", "xpath:innerText"]
+      ],
+      "value": "ID"
+    }, {
+      "id": "3044e8fe-bdfd-496f-912b-596077714480",
+      "comment": "Название колонки \"Название задачи\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(3)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[2]/div/table/thead/tr/th[3]", "xpath:idRelative"],
+        ["xpath=//th[3]", "xpath:position"],
+        ["xpath=//th[contains(.,'Название задачи')]", "xpath:innerText"]
+      ],
+      "value": "Название задачи"
+    }, {
+      "id": "6c7e617d-9d20-4b36-acb6-c47016fddd76",
+      "comment": "Название колонки \"Дата и время создания\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(4)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[2]/div/table/thead/tr/th[4]", "xpath:idRelative"],
+        ["xpath=//th[4]", "xpath:position"],
+        ["xpath=//th[contains(.,'Дата и время создания')]", "xpath:innerText"]
+      ],
+      "value": "Дата и время создания"
+    }, {
+      "id": "a75f445d-49ea-4ad5-acde-afffb004f3ea",
+      "comment": "Название колонки \"Дата и время исполнения\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(5)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[2]/div/table/thead/tr/th[5]", "xpath:idRelative"],
+        ["xpath=//th[5]", "xpath:position"],
+        ["xpath=//th[contains(.,'Дата и время исполнения')]", "xpath:innerText"]
+      ],
+      "value": "Дата и время исполнения"
+    }, {
+      "id": "7296692f-463f-4717-9ee7-d887e7488243",
+      "comment": "Название колонки \"Создатель\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(6)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[2]/div/table/thead/tr/th[6]", "xpath:idRelative"],
+        ["xpath=//th[6]", "xpath:position"],
+        ["xpath=//th[contains(.,'Создатель')]", "xpath:innerText"]
+      ],
+      "value": "Создатель"
+    }, {
+      "id": "aada7a5f-6337-4c1b-a2a3-9e54bf5138dd",
+      "comment": "Название колонки \"Исполнитель\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(7)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(7)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[2]/div/table/thead/tr/th[7]", "xpath:idRelative"],
+        ["xpath=//th[7]", "xpath:position"],
+        ["xpath=//th[contains(.,'Исполнитель')]", "xpath:innerText"]
+      ],
+      "value": "Исполнитель"
+    }, {
+      "id": "e3dc3712-7bb3-4c76-bd2a-8cd53bc021bd",
+      "comment": "Название колонки \"Привлекаемый\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(8)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[2]/div/table/thead/tr/th[8]", "xpath:idRelative"],
+        ["xpath=//th[8]", "xpath:position"],
+        ["xpath=//th[contains(.,'Привлекаемый')]", "xpath:innerText"]
+      ],
+      "value": "Привлекаемый"
+    }, {
+      "id": "cc5ea0c8-442b-407b-a345-28df25683ecb",
+      "comment": "Название колонки \"Статус задачи\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(9)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(9)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/div[2]/div/table/thead/tr/th[9]", "xpath:idRelative"],
+        ["xpath=//th[9]", "xpath:position"],
+        ["xpath=//th[contains(.,'Статус задачи')]", "xpath:innerText"]
+      ],
+      "value": "Статус задачи"
+    }, {
+      "id": "d80530e9-bd3e-4788-bbf7-5ad432c5707c",
+      "comment": "Тестирование завершено",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d64498f8-1e0a-470e-92f0-2e196631eb23",
+    "name": "Проверка наименований в иконке \"Глаз\", Список задач",
+    "commands": [{
+      "id": "7ea750b7-b1b8-4898-bcce-261e43b8a2ae",
+      "comment": "",
+      "command": "open",
+      "target": "http://dev.gpadp.phoenixit.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80bb0a90-f5db-47e0-b5d7-4b982b9a1021",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Задачи')]", "xpath:innerText"]
+      ],
+      "value": "Задачи"
+    }, {
+      "id": "152c35cd-07ac-45e0-84a9-ec14215c8735",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiToolbar-root > .MuiButtonBase-root .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiToolbar-root > .MuiButtonBase-root .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfbcd88d-1c6c-40f7-b19e-68dc06f2c77b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiButtonBase-root:nth-child(1) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(1) .MuiTypography-root", "css:finder"],
+        ["xpath=//li/div/span", "xpath:position"]
+      ],
+      "value": "Действие"
+    }, {
+      "id": "b7aef23a-d40c-4588-a20c-d6bb82d38a7a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiButtonBase-root:nth-child(2) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(2) .MuiTypography-root", "css:finder"],
+        ["xpath=//li[2]/div/span", "xpath:position"]
+      ],
+      "value": "ID"
+    }, {
+      "id": "6b98a049-14a9-42a6-b142-60e127038e1e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiButtonBase-root:nth-child(3) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(3) .MuiTypography-root", "css:finder"],
+        ["xpath=//li[3]/div/span", "xpath:position"]
+      ],
+      "value": "Название задачи"
+    }, {
+      "id": "502879a6-bc58-40a2-a67e-4bf8ce2a2924",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiButtonBase-root:nth-child(4) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(4) .MuiTypography-root", "css:finder"],
+        ["xpath=//li[4]/div/span", "xpath:position"]
+      ],
+      "value": "Дата и время создания"
+    }, {
+      "id": "ecf769d3-98fa-4e08-964d-ddda6098fd6f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiButtonBase-root:nth-child(5) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(5) .MuiTypography-root", "css:finder"],
+        ["xpath=//li[5]/div/span", "xpath:position"]
+      ],
+      "value": "Дата и время исполнения"
+    }, {
+      "id": "c2e68c94-7a40-402a-9cfe-2db4b9c83fd2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiButtonBase-root:nth-child(6) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(6) .MuiTypography-root", "css:finder"],
+        ["xpath=//li[6]/div/span", "xpath:position"]
+      ],
+      "value": "Создатель"
+    }, {
+      "id": "6c37d966-aa76-40c4-8a78-cf1c28a7b98e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiButtonBase-root:nth-child(7) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(7) .MuiTypography-root", "css:finder"],
+        ["xpath=//li[7]/div/span", "xpath:position"]
+      ],
+      "value": "Исполнитель"
+    }, {
+      "id": "d1da0dc3-73d8-4bd7-b829-359059da3a70",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiButtonBase-root:nth-child(8) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(8) .MuiTypography-root", "css:finder"],
+        ["xpath=//li[8]/div/span", "xpath:position"]
+      ],
+      "value": "Привлекаемый"
+    }, {
+      "id": "4c163c8a-a4fe-436d-b2d4-cc1fe1c83af3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.MuiButtonBase-root:nth-child(9) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(9) .MuiTypography-root", "css:finder"],
+        ["xpath=//li[9]/div/span", "xpath:position"]
+      ],
+      "value": "Статус задачи"
+    }, {
+      "id": "4be793a6-f765-4c98-8369-3acebfe52e14",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "89bcdfc4-5c51-44f3-b2cb-7061cad5e31a",
+    "name": "Проверка наименований в таблице \"Список отчётов\" ",
+    "commands": [{
+      "id": "d64c9c3a-e8c3-418b-bbbd-bc812565c049",
+      "comment": "Перейти на http://dev.gpadp.phoenixit.ru",
+      "command": "open",
+      "target": "http://dev.gpadp.phoenixit.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e95811b-9b9d-41f2-b7cd-b1bec293dba4",
+      "comment": "Отображена ЭФ \"Список задач\" раздела \"Задачи\"",
+      "command": "verifyText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Задачи')]", "xpath:innerText"]
+      ],
+      "value": "Задачи"
+    }, {
+      "id": "cadba5a8-f7ff-4912-a6fd-98957943c354",
+      "comment": "Выбрать раздел \"Администрирование\"",
+      "command": "click",
+      "target": "linkText=Администрирование",
+      "targets": [
+        ["linkText=Администрирование", "linkText"],
+        ["css=li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Администрирование')]", "xpath:link"],
+        ["xpath=//div[@id='root']/header/div/div/div[2]/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/constructor/list')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Администрирование')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b6429c1-7efc-4a35-b2ae-3955a9d763ba",
+      "comment": "Отображена ЭФ \"Список отчётов\" ",
+      "command": "verifyText",
+      "target": "css=.jss579",
+      "targets": [
+        ["css=.jss579", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Список отчетов')]", "xpath:innerText"]
+      ],
+      "value": "Список отчетов"
+    }, {
+      "id": "62794e06-5ab4-4128-9b13-f8db61efc2aa",
+      "comment": "Перейти на вкладку \"Хранилище отчётов\"",
+      "command": "click",
+      "target": "css=.jss857",
+      "targets": [
+        ["css=.jss857", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Хранилище отчетов')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6a1ad1c-63ec-4906-a0fc-af30d778d41f",
+      "comment": "Открыта вкладка \"Хранилище отчетов\"",
+      "command": "verifyText",
+      "target": "css=.MuiTab-root:nth-child(2)",
+      "targets": [
+        ["css=.MuiTab-root:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Хранилище отчетов')]", "xpath:innerText"]
+      ],
+      "value": "Хранилище отчетов"
+    }, {
+      "id": "3dbb0495-597d-4dac-8b74-d14728d1ea33",
+      "comment": "Перейти на вкладку \"История отчётов\"",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(3) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(3) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/button[3]/span", "xpath:idRelative"],
+        ["xpath=//button[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'История отчетов')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f201c709-8a1c-4e66-ab4c-ed97a5800ca0",
+      "comment": "Открыта вкладка \"История отчётов\"",
+      "command": "verifyText",
+      "target": "css=.jss687",
+      "targets": [
+        ["css=.jss687", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'История отчетов')]", "xpath:innerText"]
+      ],
+      "value": "История отчетов"
+    }, {
+      "id": "83cce068-c08f-4790-beff-b60d784b2613",
+      "comment": "Перейти на вкладку \"Список отчётов\"",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(1) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(1) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Список отчетов')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd9abd2e-aaf7-416b-9c73-04687bd40f52",
+      "comment": "Открыта вкладка \"Список отчётов\"",
+      "command": "verifyText",
+      "target": "css=.jss739",
+      "targets": [
+        ["css=.jss739", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Список отчетов')]", "xpath:innerText"]
+      ],
+      "value": "Список отчетов"
+    }, {
+      "id": "a0637078-c504-40e4-9234-b5a5d0a1859d",
+      "comment": "Наименование для колонки \"№\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(1)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th", "xpath:idRelative"],
+        ["xpath=//th", "xpath:position"],
+        ["xpath=//th[contains(.,'№')]", "xpath:innerText"]
+      ],
+      "value": "№"
+    }, {
+      "id": "1d673aef-50e3-4781-b87a-394d3f1a00d7",
+      "comment": "Наименование для колонки \"Действие\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(2)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[2]", "xpath:idRelative"],
+        ["xpath=//th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'Действие')]", "xpath:innerText"]
+      ],
+      "value": "Действие"
+    }, {
+      "id": "f9c9c022-bdbb-4187-a625-fd57908b9674",
+      "comment": "Наименование для колонки \"Наименование\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(3)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[3]", "xpath:idRelative"],
+        ["xpath=//th[3]", "xpath:position"],
+        ["xpath=//th[contains(.,'Наименование')]", "xpath:innerText"]
+      ],
+      "value": "Наименование"
+    }, {
+      "id": "20c1c0d3-ff9e-4b06-9b9a-56677e52f11e",
+      "comment": "Наименование для колонки \"Создатель\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(4)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[4]", "xpath:idRelative"],
+        ["xpath=//th[4]", "xpath:position"],
+        ["xpath=//th[contains(.,'Создатель')]", "xpath:innerText"]
+      ],
+      "value": "Создатель"
+    }, {
+      "id": "22405df1-821b-4b03-873e-696668d5321b",
+      "comment": "Наименование для колонки \"Дата создания\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(5)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[5]", "xpath:idRelative"],
+        ["xpath=//th[5]", "xpath:position"],
+        ["xpath=//th[contains(.,'Дата создания')]", "xpath:innerText"]
+      ],
+      "value": "Дата создания"
+    }, {
+      "id": "e2f0a36e-3372-4986-a714-725e3fe9b4e9",
+      "comment": "Наименование для колонки \"Опубликован\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(6)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[6]", "xpath:idRelative"],
+        ["xpath=//th[6]", "xpath:position"],
+        ["xpath=//th[contains(.,'Опубликован')]", "xpath:innerText"]
+      ],
+      "value": "Опубликован"
+    }, {
+      "id": "de89fb40-e023-4d53-a886-e0ddd7dec6f4",
+      "comment": "Наименование для колонки \"Дата публикации\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(7)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(7)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[7]", "xpath:idRelative"],
+        ["xpath=//th[7]", "xpath:position"],
+        ["xpath=//th[contains(.,'Дата публикации')]", "xpath:innerText"]
+      ],
+      "value": "Дата публикации"
+    }, {
+      "id": "fc2cf7c8-8a9b-4cbb-82c9-09720fd7ae16",
+      "comment": "Наименование для колонки \"Планировщик\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(8)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[8]", "xpath:idRelative"],
+        ["xpath=//th[8]", "xpath:position"],
+        ["xpath=//th[contains(.,'Планировщик')]", "xpath:innerText"]
+      ],
+      "value": "Планировщик"
+    }, {
+      "id": "b9334f5e-8b0f-4911-ac91-25f916df8394",
+      "comment": "Наименование для колонки \"Вид отчёта\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(9)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(9)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[9]", "xpath:idRelative"],
+        ["xpath=//th[9]", "xpath:position"],
+        ["xpath=//th[contains(.,'Вид отчета')]", "xpath:innerText"]
+      ],
+      "value": "Вид отчета"
+    }, {
+      "id": "63902148-ba74-4f12-abfa-d6f34b73f1bf",
+      "comment": "Наименование для колонки \"Статус\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(10)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(10)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/thead/tr/th[10]", "xpath:idRelative"],
+        ["xpath=//th[10]", "xpath:position"],
+        ["xpath=//th[contains(.,'Статус')]", "xpath:innerText"]
+      ],
+      "value": "Статус"
+    }, {
+      "id": "5bba2791-afaf-4810-9f02-a98e32ad9c49",
+      "comment": "Есть кнопка \"Создать\"",
+      "command": "verifyElementPresent",
+      "target": "css=.MuiButton-label > span",
+      "targets": [
+        ["css=.MuiButton-label > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/button/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c89471a-4070-4175-8e8e-e041a2f63821",
+      "comment": "Проверка наименования для кнопки \"Создать отчет\"",
+      "command": "verifyText",
+      "target": "css=.MuiButton-label > span",
+      "targets": [
+        ["css=.MuiButton-label > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/button/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": "Создать отчет"
+    }, {
+      "id": "bc8074fb-1086-46fb-b897-5657a7e7a860",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "55a7b93e-fce0-4d26-95e9-9257dd0d782a",
+    "name": "Проверка правильности отображения нумерации для Списка отчётов",
+    "commands": [{
+      "id": "f4b252fe-a676-4c1a-b534-9c966dd79a5c",
+      "comment": "Перейти на http://dev.gpadp.phoenixit.ru",
+      "command": "open",
+      "target": "http://dev.gpadp.phoenixit.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e3e3f65-0952-4f9d-a30a-52492b061f9e",
+      "comment": "Выбрать раздел \"Администрирование\"",
+      "command": "click",
+      "target": "linkText=Администрирование",
+      "targets": [
+        ["linkText=Администрирование", "linkText"],
+        ["css=li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Администрирование')]", "xpath:link"],
+        ["xpath=//div[@id='root']/header/div/div/div[2]/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/constructor/list')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Администрирование')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e84d9837-a4e3-436f-a718-3759343bf05c",
+      "comment": "Отображена ЭФ \"Список отчётов\"",
+      "command": "verifyText",
+      "target": "css=.jss572",
+      "targets": [
+        ["css=.jss572", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Список отчетов')]", "xpath:innerText"]
+      ],
+      "value": "Список отчетов"
+    }, {
+      "id": "14368c1d-cb8d-4326-8297-420144e26fab",
+      "comment": "Первый отчёт в списке отчётов под номером \"1\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-body:nth-child(1)",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-body:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": "1"
+    }, {
+      "id": "3baa3b6e-dca4-48b1-b08c-5ee30b074e33",
+      "comment": "Перейти на страницу №2",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(4) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(4) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div[2]/div[2]/button[3]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "47a5d470-c7b5-4c9e-9860-6b2244923610",
+      "comment": "Первый отчёт в списке отчётов на странице №2 под номером \"1\"",
+      "command": "verifyText",
+      "target": "css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-body:nth-child(1)",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-body:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/div/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": "1"
+    }, {
+      "id": "f4025481-655a-4c10-bff3-d5a755e73d83",
+      "comment": "С каждой новой страницы нумерация отчётов начинается заново",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2fab4793-51cd-4c36-8cc3-4daaa759e010",
+    "name": "[Составить тест] Проверка действия \"Редактирование\" для отчётов со статусом \"Архив\" и \"Активный\"",
+    "commands": []
+  }, {
+    "id": "e3494655-2787-42ea-aa1b-335ce7af7d8c",
+    "name": "[Составить тест] Проверка действия \"Архив\" для отчётов Всех статусов",
+    "commands": []
+  }, {
+    "id": "a901ec38-c513-4f46-a0e2-c7a96f430b2a",
+    "name": "Проверка наименований в таблице \"Подзадачи\"",
+    "commands": [{
+      "id": "6613a38e-c345-4938-bc26-2f5ccb6ec3c8",
+      "comment": "Перейти на http://dev.gpadp.phoenixit.ru/",
+      "command": "open",
+      "target": "http://dev.gpadp.phoenixit.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4624dad8-7c15-4404-b09e-2a72149a7b3c",
+      "comment": "Открыт раздел \"Задачи\"",
+      "command": "verifyText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Задачи')]", "xpath:innerText"]
+      ],
+      "value": "Задачи"
+    }, {
+      "id": "34c3b77b-4398-4561-8309-e0cd85c6add1",
+      "comment": "Нажать на кнопку \"Действия\" для первой задачи в Списке задач",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "74093cad-610f-4474-b4cd-b03f40d24df3",
+      "comment": "Нажать на \"Редактировать\"",
+      "command": "click",
+      "target": "css=.MuiListItem-root:nth-child(2)",
+      "targets": [
+        ["css=.MuiListItem-root:nth-child(2)", "css:finder"],
+        ["xpath=//nav/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe912e16-5e41-4fb6-8b77-0a88b0b1ac8a",
+      "comment": "Открыта вкладка \"Содержание задачи\"",
+      "command": "verifyText",
+      "target": "css=.Mui-selected > .MuiTab-wrapper",
+      "targets": [
+        ["css=.Mui-selected > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Содержание задачи')]", "xpath:innerText"]
+      ],
+      "value": "Содержание задачи"
+    }, {
+      "id": "f2caf620-15f4-4f2f-914e-a9ab28b83e1f",
+      "comment": "Перейти на вкладку \"Подзадачи\"",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(6) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(6) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/div/button[6]/span", "xpath:idRelative"],
+        ["xpath=//button[6]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Подзадачи')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa38dce2-b71c-4978-b23b-d085de20eccc",
+      "comment": "Открыта вкладка \"Подзадачи\"",
+      "command": "verifyText",
+      "target": "css=.jss859 > div",
+      "targets": [
+        ["css=.jss859 > div", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "Подзадачи"
+    }, {
+      "id": "cd6c8a30-33fe-4e83-b172-2357efc10d7d",
+      "comment": "№",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-head:nth-child(1)",
+      "targets": [
+        ["css=.MuiTableCell-head:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/div/div/div/table/thead/tr/th", "xpath:idRelative"],
+        ["xpath=//th", "xpath:position"],
+        ["xpath=//th[contains(.,'№')]", "xpath:innerText"]
+      ],
+      "value": "№"
+    }, {
+      "id": "cd0fe33c-52b5-4cef-9a10-ca79cff3627f",
+      "comment": "Действие",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(2)",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/div/div/div/table/thead/tr/th[2]", "xpath:idRelative"],
+        ["xpath=//th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'Действие')]", "xpath:innerText"]
+      ],
+      "value": "Действие"
+    }, {
+      "id": "4a7f2bf2-a076-4a65-9979-67c2e30c6c87",
+      "comment": "ID подзадачи",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(3)",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/div/div/div/table/thead/tr/th[3]", "xpath:idRelative"],
+        ["xpath=//th[3]", "xpath:position"],
+        ["xpath=//th[contains(.,'ID подзадачи')]", "xpath:innerText"]
+      ],
+      "value": "ID подзадачи"
+    }, {
+      "id": "35c6b01f-b7e7-49a7-be51-98702952b2f7",
+      "comment": "Дата и время создания",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(4)",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/div/div/div/table/thead/tr/th[4]", "xpath:idRelative"],
+        ["xpath=//th[4]", "xpath:position"],
+        ["xpath=//th[contains(.,'Дата и время создания')]", "xpath:innerText"]
+      ],
+      "value": "Дата и время создания"
+    }, {
+      "id": "edf87088-70a4-4d4b-b5be-3c032c329da1",
+      "comment": "Срок исполнения",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(5)",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/div/div/div/table/thead/tr/th[5]", "xpath:idRelative"],
+        ["xpath=//th[5]", "xpath:position"],
+        ["xpath=//th[contains(.,'Срок исполнения')]", "xpath:innerText"]
+      ],
+      "value": "Срок исполнения"
+    }, {
+      "id": "df708c94-c1b4-4b07-b012-03f6d3ec9a08",
+      "comment": "Создатель",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(6)",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/div/div/div/table/thead/tr/th[6]", "xpath:idRelative"],
+        ["xpath=//th[6]", "xpath:position"],
+        ["xpath=//th[contains(.,'Создатель')]", "xpath:innerText"]
+      ],
+      "value": "Создатель"
+    }, {
+      "id": "61fc0329-9d38-40b9-9ce2-10ca74a8839e",
+      "comment": "Соисполнитель",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(7)",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(7)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/div/div/div/table/thead/tr/th[7]", "xpath:idRelative"],
+        ["xpath=//th[7]", "xpath:position"],
+        ["xpath=//th[contains(.,'Соисполнитель')]", "xpath:innerText"]
+      ],
+      "value": "Соисполнитель"
+    }, {
+      "id": "180d5a01-a726-44d4-bf70-9b5ad8b6514f",
+      "comment": "Участники АДП",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(8)",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/div/div/div/table/thead/tr/th[8]", "xpath:idRelative"],
+        ["xpath=//th[8]", "xpath:position"],
+        ["xpath=//th[contains(.,'Участники АДП')]", "xpath:innerText"]
+      ],
+      "value": "Участники АДП"
+    }, {
+      "id": "5ed732b9-d9a6-4d61-8ac9-4e9e1069912f",
+      "comment": "Статус",
+      "command": "verifyText",
+      "target": "css=.MuiTableCell-root:nth-child(9)",
+      "targets": [
+        ["css=.MuiTableCell-root:nth-child(9)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/div/div/div/table/thead/tr/th[9]", "xpath:idRelative"],
+        ["xpath=//th[9]", "xpath:position"],
+        ["xpath=//th[contains(.,'Статус')]", "xpath:innerText"]
+      ],
+      "value": "Статус"
+    }, {
+      "id": "ca9b0cf1-7145-4cb2-a44e-df439ebf741d",
+      "comment": "Кнопка \"Создать подзадачу\"",
+      "command": "verifyElementPresent",
+      "target": "css=.MuiButton-label > span",
+      "targets": [
+        ["css=.MuiButton-label > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37683867-fdae-4348-9757-4808b0ed05bf",
+      "comment": "Создать подзадачу",
+      "command": "verifyText",
+      "target": "css=.MuiButton-label > span",
+      "targets": [
+        ["css=.MuiButton-label > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "Добавить подзадачу"
+    }, {
+      "id": "629f578f-313e-4fef-9ab9-53088cf7e55f",
+      "comment": "Тестирование завершено",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "626aa396-e74c-45f1-a36b-40ba573ffd1b",
+    "name": "ИС при выборе действия \"Удаление\" для Подзадачи",
+    "commands": [{
+      "id": "cf6f69a7-8ba7-4de1-9a1f-900b40eb7ff4",
+      "comment": "Перейти на http://dev.gpadp.phoenixit.ru",
+      "command": "open",
+      "target": "http://dev.gpadp.phoenixit.ru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b38a4a4-dfbf-4d0d-8d17-d1411132a53a",
+      "comment": "Перейти на раздел \"Задачи\"",
+      "command": "click",
+      "target": "linkText=Задачи",
+      "targets": [
+        ["linkText=Задачи", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Задачи')]", "xpath:link"],
+        ["xpath=//div[@id='root']/header/div/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/tasks')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Задачи')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f1d8a70-9f6c-4760-b4bc-48f0ebbb04f3",
+      "comment": "Открыта ЭФ \"Список задач\"",
+      "command": "verifyText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Задачи')]", "xpath:innerText"]
+      ],
+      "value": "Задачи"
+    }, {
+      "id": "e8b604bd-0165-4292-a1bc-a130ab6381ee",
+      "comment": "Нажать кнопку \"Действие\"",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) > .MuiTableCell-root > .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5fc609b-3962-4fad-ac86-2abdba2b86a7",
+      "comment": "Выбрать действие \"Редактировать\"",
+      "command": "click",
+      "target": "css=.MuiListItem-root:nth-child(2)",
+      "targets": [
+        ["css=.MuiListItem-root:nth-child(2)", "css:finder"],
+        ["xpath=//nav/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d29d6a4-840d-474e-9491-df9e97cf409c",
+      "comment": "Перейти на вкладку \"Подзадачи\"",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(6) > .MuiTab-wrapper",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(6) > .MuiTab-wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/div/button[6]/span", "xpath:idRelative"],
+        ["xpath=//button[6]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Подзадачи')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "75cf4476-4c18-4323-806e-91dc5e920efc",
+      "comment": "Нажать на название вкладки \"Подзадачи\" ",
+      "command": "click",
+      "target": "css=.jss859 > div",
+      "targets": [
+        ["css=.jss859 > div", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67533090-d506-4763-b390-924ce0dc1bd4",
+      "comment": "Открыта вкладка \"Подзадачи\" со списком подзадач",
+      "command": "verifyText",
+      "target": "css=.jss859 > div",
+      "targets": [
+        ["css=.jss859 > div", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "Подзадачи"
+    }, {
+      "id": "09617925-294a-4c7a-96f0-feab1dc2f4c6",
+      "comment": "Нажать на иконку \"Удалить\"",
+      "command": "click",
+      "target": "css=.MuiTableRow-root:nth-child(1) span:nth-child(2) > .MuiSvgIcon-root > path",
+      "targets": [
+        ["css=.MuiTableRow-root:nth-child(1) span:nth-child(2) > .MuiSvgIcon-root > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d58c4edd-30c9-448b-b433-60e84461c7f7",
+      "comment": "ИС \"Вы действительно хотите удалить подзадачу\"",
+      "command": "verifyText",
+      "target": "css=.MuiDialogActions-root",
+      "targets": [
+        ["css=.MuiDialogActions-root", "css:finder"],
+        ["xpath=//div[3]/div/div[3]", "xpath:position"]
+      ],
+      "value": "Да\\nОтмена"
+    }, {
+      "id": "157bca22-197b-46c3-853e-02726d73e3e3",
+      "comment": "Нажать на \"Отмена\"",
+      "command": "click",
+      "target": "css=.MuiButton-containedSecondary:nth-child(2) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedSecondary:nth-child(2) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Отмена')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "adb4641d-eb6e-4c4e-968e-37041f325579",
+      "comment": "Тестирование завершено",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9d4c6865-9a61-419e-af88-5603bf721cd3",
+    "name": "История отчётов",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1ef59412-bebc-43c0-aa95-99ddcf89466e", "3ae2ef8f-ffc7-4c9d-83e1-bed3ce543cce", "d34f3aed-7135-431b-9bc4-31b2d5535bef"]
+  }, {
+    "id": "b1b37754-642d-4f30-b623-2bf430449d72",
+    "name": "Участники",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bd91449e-ddaa-4a9c-9a6c-2a7c2084cea0", "a4de63e1-8ed2-4980-b2f1-3b5c18ad0ef8", "aa6ab78c-04e2-491f-9c1a-c6b3ee6373e0", "8ae424b8-f031-4b2d-b486-068befcb9b78", "43377dbd-9306-467f-90be-118b036855c3", "083afd6e-c18e-42ef-add7-35cc13aecb9e"]
+  }, {
+    "id": "ad5e8fff-d123-413c-8b89-0df0facb426e",
+    "name": "Запросы",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ba62af35-3b0a-4b53-9837-bd0675373fb0"]
+  }, {
+    "id": "07cf7431-3c57-4101-a979-4de6b16c34e8",
+    "name": "Список задач",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e9a071e3-c623-4bec-97e6-8606bc2e90cb", "d64498f8-1e0a-470e-92f0-2e196631eb23"]
+  }, {
+    "id": "b1365ab7-d53b-4f0d-ac54-8c805ce772b7",
+    "name": "Список отчётов",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e3494655-2787-42ea-aa1b-335ce7af7d8c", "89bcdfc4-5c51-44f3-b2cb-7061cad5e31a", "55a7b93e-fce0-4d26-95e9-9257dd0d782a", "2fab4793-51cd-4c36-8cc3-4daaa759e010"]
+  }, {
+    "id": "cf96c5a8-b03a-449e-b919-8835725a213d",
+    "name": "Подзадачи",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a901ec38-c513-4f46-a0e2-c7a96f430b2a", "626aa396-e74c-45f1-a36b-40ba573ffd1b"]
+  }],
+  "urls": ["http://dev.gpadp.phoenixit.ru/"],
+  "plugins": []
+}
